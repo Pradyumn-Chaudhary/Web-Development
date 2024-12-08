@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.ball {
+  height: 50px;
+  width: 50px;
+  background-color: wheat;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: bounceX 3s linear infinite,
+    bounceY 1s ease-out infinite alternate;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100w;
+  background-color: black;
+}
+
+@keyframes bounceX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 96%;
+  }
+}
+
+@keyframes bounceY {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 70%;
+  }
+}

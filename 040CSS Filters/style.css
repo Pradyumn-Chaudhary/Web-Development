@@ -1,0 +1,23 @@
+img {
+  /* filter: blur(1px); */
+}
+#img1 {
+  width: 540px;
+  height: 360px;
+  filter: brightness(120%) contrast(6);
+  filter: hue-rotate(2);
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+#img2 {
+  width: 540px;
+  height: 360px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: grayscale(100%) sepia(100%);
+  filter: opacity(0.17);
+}
+#img3 {
+  filter: drop-shadow(16px 16px 20px red);
+  filter: invert(0.8);
+}

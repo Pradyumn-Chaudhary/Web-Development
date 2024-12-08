@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Yuji+Mai&display=swap');
+body{
+    background-color: red;
+}
+.mediaQ{
+    font-size: 42px;
+        font-family: "Protest Revolution", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+.boxes{
+    display: flex;
+}
+.box{
+    width: 344px;
+    height: 344px;
+    background-color: steelblue;
+    padding: 3px;
+    margin: 3px;
+    font-family: "Yuji Mai", serif;
+    overflow: auto;
+}
+@media only screen and (max-width: 455px){
+    body{
+        background-color: blue;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+}
+
+  

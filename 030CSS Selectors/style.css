@@ -1,0 +1,48 @@
+.box::first-line {
+  color: bisque;
+}
+
+.boxes * {
+  border: 2px solid black;
+  color: aqua;
+}
+
+[data-color="primary"] {
+  padding-top: 71px;
+}
+
+/* p, a, .box{
+    background-color: aliceblue;
+} */
+.box:nth-child(even) {
+  background-color: aquamarine;
+}
+
+.box:nth-last-child(1) {
+  background-color: blueviolet;
+}
+
+.boxes::before {
+  content: "💀💀💀";
+  background-color: goldenrod;
+}
+.boxes::after {
+  content: "☠️☠️☠️";
+  color: blue;
+}
+/* .box::selection{
+color: burlywood;
+background-color: rgb(6, 6, 6);
+} */
+::selection {
+  color: burlywood;
+  background-color: rgb(6, 6, 6);
+}
+.box::first-letter {
+  font-family: cursive;
+  font-size: 25px;
+  color: peru;
+}
+input::placeholder {
+  color: darkorange;
+}

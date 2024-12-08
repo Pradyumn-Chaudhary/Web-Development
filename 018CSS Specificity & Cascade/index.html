@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        h1 {
+            color: aqua;
+        }
+
+        [data-x=a] {
+            background-color: antiquewhite;
+        }
+
+        .important {
+            color: rgb(248, 7, 7) !important;
+        }
+
+        div:first-child {
+            color: rgb(245, 190, 50);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1 class="red yellow purple" data-x="a">CSS Specificity & Cascade</h1>
+            <p>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</p>
+        </div>
+        <div>
+            <ol>
+                <li>
+                    Position and order of appearance: the order in which your CSS rules appear
+                </li>
+                <li>
+                    Specificity: an algorithm that determines which CSS selector has the strongest match
+                </li>
+                <li>
+                    Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS
+                    from a browser extension, or your authored CSS
+                </li>
+                <li style="color: aquamarine;" class="important">
+                    Importance: some CSS rules are weighted more heavily than others, especially with the !important
+                    rule type
+                    Lets look into all these one by one
+                </li>
+            </ol>
+            <p>
+            <h2>Specificity Calculation</h2>
+            To calculate specificity, assign a value to each part of the selector:
+            <ul>
+                <li> Universal Selector: 0
+                </li>
+                <li>Element selectors and pseudo-elements: 1
+                </li>
+                <li>
+                    Class selectors, attribute selectors, and pseudo-classes: 10
+                </li>
+                <li> ID selectors: 100</li>
+                <li>Inline styles: 1000</li>
+            </ul>
+            Then, add up the values of all the parts in the selector.
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>

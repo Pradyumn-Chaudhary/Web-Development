@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form action="post">
+        <div>
+      <label for="username">Enter your username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div>
+      <label for="age">Enter age</label>
+      <input type="number" name="age" placeholder="Enter your age" id="age"/>
+    </div>
+      <label for="language">Enter language</label>
+      <input type="text" name="language" placeholder="Enter your language" id="language" />
+    <div>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">Female</label>
+    </div>
+    <div>
+        <input type="checkbox" name="sites" id="codechef" value="codechef">
+        <label for="codechef">CodeChef</label>
+        <input type="checkbox" name="sites" id="gfg" value="gfg">
+        <label for="gfg">GFG</label>
+    </div>
+    <div>
+        <label for="comment">Commment:</label>
+        <br>
+        <textarea name="comment" id="comment" rows="2" cols="20"></textarea>
+    </div>
+    <div>
+        <select name="Fruits">
+            <option value="apple">Apple</option>
+            <option value="orange">Orange</option>
+            <option value="mango">Mango</option>
+        </select>
+    </div>
+    </form>
+  </body>
+</html>

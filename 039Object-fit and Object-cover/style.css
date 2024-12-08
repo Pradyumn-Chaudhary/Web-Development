@@ -1,0 +1,17 @@
+.container {
+  height: 434px;
+  width: 688px;
+  /* background-color: blueviolet; */
+  /* background-position: 50% 50%; */
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZlf5lc5tX-0gY-y94pGS0mQdL-D0lCH2OQ&s);
+  /* background-repeat: no-repeat; */
+}
+img {
+  height: 434px;
+  width: 488px;
+  /* object-fit: fill; */
+  object-fit: cover;
+  object-position: bottom right;
+  /* object-fit: contain; */
+  /* object-fit: scale-down; */
+}

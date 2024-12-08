@@ -1,0 +1,46 @@
+.container {
+  width: 80vw;
+  height: 70vh;
+  border: 5px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  /* grid-template-areas:
+    "nav nav nav"
+    "side article article"
+    "footer footer footer"; */
+  /* grid-template-columns: repeat(3, minmax(100px,1fr)); */
+  gap: 10px;
+  /* justify-items and align-items is use to align within cell */
+  align-items: center;
+  justify-items: center;
+  /* justify-content and align-content is use to align within grid  --> used when the grid is smaller than the container */
+  place-content: center;
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+.item {
+  border: 2px solid red;
+  height: 55px;
+  width: 55px;
+}
+
+/* .item1{
+    grid-area: nav;
+    background-color: antiquewhite;
+}
+.item2{
+    grid-area: side;
+    background-color: aquamarine;
+}
+.item3{
+    grid-area: article;
+    background-color:blanchedalmond
+}
+.item4{
+grid-area: footer;
+background-color: burlywood;
+}
+.item5{
+background-color: cadetblue;
+} */

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: flex-end;
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: wheat;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: bounceY 3s cubic-bezier(0.27, 0.44, 0.15, 1.27) 100ms infinite
+      alternate,
+    bounceX 3s cubic-bezier(0.4, 0.39, 1, 1) 100ms infinite alternate;
+}
+@keyframes bounceY {
+  from {
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+@keyframes bounceX {
+  from {
+  }
+  to {
+    transform: translateX(96vw);
+  }
+}

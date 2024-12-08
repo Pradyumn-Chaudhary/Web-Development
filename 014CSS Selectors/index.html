@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Element Selector */
+      /* div{
+            background-color: rgb(226, 186, 186);
+        } */
+
+      /* Class Selector */
+      .red {
+        background-color: rgb(226, 186, 186);
+      }
+
+      /* Id Selector */
+      #pink {
+        background-color: rgb(247, 153, 200);
+      }
+
+      /* Child Selector */
+      div > p {
+        background-color: rgb(243, 203, 104);
+      }
+
+      /* Descentant Selector */
+      div p {
+        color: rgb(90, 71, 47);
+      }
+
+      /* Universal Selector */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Pseudo Selector */
+      a:visited {
+        color: pink;
+      }
+      a:link {
+        color: purple;
+      }
+      a:active {
+        background-color: rgb(22, 90, 196);
+      }
+      a:hover {
+        background-color: darkolivegreen;
+      }
+      p:first-child {
+        background-color: lightslategrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <main class="selector">
+      <p>I am First</p>
+      <p>I am Second</p>
+    </main>
+    <div class="red">I am a div</div>
+    <div id="pink">
+      I am another div
+      <p>I am Paragragh inside div</p>
+      <article>
+        <p>
+          I am another Paragraph inside div but not directly inside div I am
+          inside a article of div
+        </p>
+      </article>
+    </div>
+    <div>
+      <a href="https://www.google.com">Google</a>
+    </div>
+    <div>
+      <a href="https://www.codewithharry.com">codewithharry</a>
+    </div>
+  </body>
+</html>
