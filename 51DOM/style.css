@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    box-sizing: border-box;
+    color: wheat;
+    border : 2px solid white;
+    width: 56px;
+    height: 45px;
+    margin: 20px;
+    padding: 9px;
+}
