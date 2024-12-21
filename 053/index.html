@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .box{
+            border: 2px solid black;
+            flex-grow: 1;
+            width: 200px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div id="3rd" class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <span class="box">Span</span>
+        <div class="box">Box 5</div>
+    </div>
+    <script>
+        document.body.firstElementChild.firstElementChild.style.backgroundColor = "red";
+        document.body.firstElementChild.lastElementChild.style.backgroundColor = "pink"
+        document.getElementById("3rd").style.backgroundColor = "beige";
+        document.getElementsByClassName("box")[1].style.backgroundColor = "wheat";
+        document.getElementsByTagName("span")[0].style.backgroundColor = "gold"
+        document.querySelectorAll(".box")[3].style.backgroundColor = "bisque"
+    </script>
+</body>
+</html>
