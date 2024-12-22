@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and Removing Elements</title>
+    <style>
+        *{
+            overflow-x: hidden;
+        }
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap : 25px
+        }
+        .box{
+            outline: 10px solid salmon;
+            border: 10px solid pink;
+            width: 200px;
+            height: 70px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        details{
+            width: 98vw;
+            height: 70px;
+            border: 10px solid pink;
+            outline: 10px solid salmon;
+        }
+        div:first-child{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        button{
+            margin: 10px;
+            height: 30px;
+            position: fixed;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="dark" style="position: absolute;">
+    <div>
+    <button class="dark">Dark Mode</button>
+</div>
+    <div class="container" style="display: flex">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <details>
+            <summary>Introduction</summary>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus beatae adipisci esse?</p>
+        </details>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
