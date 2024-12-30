@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacking Simulator</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy7FkYjvbVnZ1UnM18dfhSlEfg3V44tAkYbg&s"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #0f0f0f;
+        font-family: monospace;
+        font-size: x-large;
+        color: #33ff33;
+        overflow: hidden;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://t4.ftcdn.net/jpg/08/80/48/11/360_F_880481132_f2HeDn0F6mZJROEBKI3Cdy0YoBzIFb1v.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1; /* Lighten the background */
+        z-index: -1;
+      }
+      .container {
+        padding: 20px;
+        white-space: pre-wrap;
+        text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33; /* Glowing text effect */
+      }
+      .blinking-dots::after {
+        content: "";
+        display: inline-block;
+        animation: dot-appear 1s infinite;
+      }
+      @keyframes dot-appear {
+        0% {
+          content: "";
+        }
+        25% {
+          content: ".";
+        }
+        50% {
+          content: "..";
+        }
+        75% {
+          content: "...";
+        }
+        100% {
+          content: "";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
