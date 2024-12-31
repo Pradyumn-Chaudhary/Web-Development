@@ -9,10 +9,12 @@
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy7FkYjvbVnZ1UnM18dfhSlEfg3V44tAkYbg&s"
     />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Butcherman&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Butcherman", serif;
       }
       body {
         width: 100vw;
@@ -36,7 +38,8 @@
         opacity: 0.1; /* Lighten the background */
         z-index: -1;
       }
-      .container, .hacked{
+      .container,
+      .hacked {
         padding: 20px;
         white-space: pre-wrap;
         text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33; /* Glowing text effect */
@@ -63,10 +66,10 @@
           content: "";
         }
       }
-      .hacked{
+      .hacked {
         display: flex;
         flex-direction: column;
-        font-size: xx-large;
+        font-size: 50px;
         align-items: center;
         justify-content: center;
         gap: 4px;
@@ -75,8 +78,7 @@
   </head>
   <body>
     <div class="container"></div>
-    <div class="hacked">
-    </div>
+    <div class="hacked"></div>
     <script src="script.js"></script>
   </body>
 </html>
